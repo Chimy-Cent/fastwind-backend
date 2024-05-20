@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.post('/submit-form', (req, res) => {
   const { details } = req.body;
 
-  if (details === 'fs123445') {
+  if (details === 'FSWL3359054TRK') {
     res.json({ message: 'Your parcel is already dispatched and is on its way to you' });
   } else {
     res.status(400).json({ error: 'Invalid details' });
