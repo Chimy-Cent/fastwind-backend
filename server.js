@@ -13,7 +13,7 @@ app.post('/submit-form', (req, res) => {
   const { details } = req.body;
 
   if (details === 'FSWL3359054TRK') {
-    res.json({ message: 'Parcel location: London📍' });
+    res.json({ message: 'Parcel location: Texas📍' });
   } else {
     res.status(400).json({ error: 'Invalid details' });
   }
